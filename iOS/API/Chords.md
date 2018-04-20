@@ -1,11 +1,9 @@
 ## Chords
-![chords](./src/ios/chords.png)
-### chord
 
-具体见`DFIChord.h`头文件。提供了绘制弦图的API。该文件包含两个类：
+More detail in `DFIChord.h` header file。Offering API to draw Chord graph, containing two classes:
 
-1. **DFIChordRecord** : 该类用来存放弦图数据
-2. **DFIChord** : 该类用来绘制弦图
+1. **DFIChordRecord** : this class to restore data of Chord graph.
+2. **DFIChord** : this class to draw Chord graph.
 
 #### API
 
@@ -13,17 +11,17 @@
 
 [#]() `@property (nonatomic, strong) NSArray *groups;`
 
-*groups* 数组用来存放弦图外圈的数据，也就是饼图数据，详见[DFIShapePie]()
+*groups* array used to store outer data ,which makes up the Pie graph. More detail in [DFIShapePie]()
 
 [#]() `@property (nonatomic, strong) NSArray *data;`
 
-*data* 数组用来存放弦图内圈的数据，也就是ribbon的数据，详见 [DFIChordRibbon]()
+*data* array to store data for inner part, which makes up the Ribbons. More detail in  [DFIChordRibbon]()
 
 ##### DFIChord
 
 [#]() `@property (nonatomic, strong) DFIChordRecord *chords;`
 
-*chords* 表示用来绘制弦图的数据
+*chords* represents the data to draw Chord graph.
 
 [#]() `@property (nonatomic, assign) CGFloat padAngle;`
 
@@ -31,54 +29,54 @@
 
 [#]() `@property (nonatomic, copy) NSComparisonResult (^sortGroups)(id obj1, id obj2);`
 
-*sortGroups* 自定义方法，用来对弦进行排序。也就是提供自定义方法对 *groups* 的数据进行排序
+*sortGroups* auto-define function, used to make range of bibbons, in other words, make range of the data of Groups.
 
 [#]() `- (void)loadChordWithMatrix:(NSArray *)matrix;`
 
-参数说明：
+Parameter Instruction：
 
-*matrix* : 弦图的数据
+*matrix* : Chord data
 
-函数说明：
+Function Instruction：
 
-新建一个**DFIChord**类之后，使用该函数加载弦图的数据。最后数据会被转化保存到**chords**成员变量中，等待最后的绘制
+After creating a **DFIChord** class, use this function to load the data of Chord graph, at last the data will be restored in  **chords** member variable, waiting for drawing.
 
 ### ChordRibbon
 
-具体见`DFIChordRibbon.h`头文件。提供了绘制弦图内部色带的API。
+More detail in `DFIChordRibbon.h` header file. Offering API to draw ribbons inside the Chord graph.
 
 #### API
 
 [#]() `@property (nonatomic, strong) DFIPath *context;`
 
-*context* 保存了色带的贝塞尔曲线的信息。详见 [DFIPath]()
+*context* restore the bezier path information of a ribbon. More detail in  [DFIPath]()
 
 [#]() `@property (nonatomic, copy) id (^source)(id data);`
 
-*source* 保存了ribbon的头部信息
+*source* restore the head information of a ribbon.
 
 [#]() `@property (nonatomic, copy) id (^target)(id data);`
 
-*target* 保存了ribbon的尾部信息
+*target* restore the tail information of a ribbon.
 
 [#]() `@property (nonatomic, copy) CGFloat (^radius)(id data);`
 
-*radius* 指定ribbon横跨的弧度
+*radius* determine the angle that a robbon cross through.
 
 [#]() `@property (nonatomic, copy) CGFloat (^startAngle)(id data);`
 
-*startAngle* 指定了ribbon的起始弧度
+*startAngle* determine where the ribbon starts in angle.
 
 [#]() `@property (nonatomic, copy) CGFloat (^endAngle)(id data);`
 
-*endAngle* 指定了ribbon的结束弧度
+*endAngle* determine where the ribbon ends angle.
 
 [#]() `- (void)loadRibbonWithData:(id)data;`
 
-参数说明：
+Parameter Instruction：
 
-*data* : ribbon的数据
+*data* : ribbon's data.
 
-函数说明：
+Functuon Instruction：
 
-新建一个**DFIChordRibbon**类之后，使用该函数加载弦图的一个ribbon的数据，等待最后的绘制。
+After creating a **DFIChordRibbon** object，use this function to load in data of a ribbon, waiting for drawing.
