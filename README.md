@@ -27,7 +27,7 @@ Through more in-depth interaction attributes, users are capable of instantly ope
 
 ### API Document
 
-[API Documents](iOS/README.md)
+[More information](iOS/README.md)
 
 ### Usages & Examples
 
