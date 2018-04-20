@@ -180,7 +180,7 @@ Now add Cocoa framework to your project. Open your project and navigate to `Buil
 
 ## Performance Comparison
 
-
+Please check out this page for [Performance Comparison](Performance.md).
 
 ## Credits
 
