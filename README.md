@@ -2,7 +2,7 @@
 
 ## XXLibrary
 
-XXLibrary is a high- performance cross-platform engine for comparative visualization and interactive exploration of diverse bioinformatics data.
+XXLibrary is a high-performance cross-platform engine for comparative visualization and interactive exploration of diverse bioinformatics data.
 
 todo add a pic
 
