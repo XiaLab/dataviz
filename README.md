@@ -125,7 +125,7 @@ At [API Document](#api-document-1) section, we provide a lot of APIs, including:
 
 #### Run Xcode and check the result
 
-todo add a stack pic
+![stack](images/stack.png)
 
 ### Requirements
 
