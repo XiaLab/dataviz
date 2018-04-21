@@ -9,17 +9,17 @@ todo add a pic
 ## Getting Started
 
 - Visit the [Demo website]() and find out what you can do with XXLibrary.
-- First time with XXLibrary? Read the [Overview]() section below and then check out the Usages & Examples. 
-- We provide tutorial for both [web developer]() and [iOS developer]().
+- First time with XXLibrary? Read the [Overview](#overview) section below and then check out the Usages & Examples. 
+- We provide tutorial for both [web developer](#web) and [iOS developer](#ios).
 - Still need some help? Submit an issue on [Github](https://github.com/XiaLab/dataviz/issues) or contact us with email: contact@sciencewall.net 
 
-## Overview
+## <span id="overview">Overview</span>
 
 XXLibrary is a high-performance cross-platform engine for comparative visualization and interactive exploration of diverse bioinformatics data. Applications integrated with XXLibrary can interactively customize the presentation of user requirements on both web pages and mobile apps. 
 
 Through more in-depth interaction attributes, users are capable of instantly operating on the ﬁgures and dynamically organizing the presentation to obtain highlight, comparison and other desired exhibitions. The high-performance visualization engine can be integrated in data analysis tools as a .lib document to facilitate bioinformatics research, and it is also designed to be accessible to a wide range of users, including bench biologists and bioinformaticians.
 
-## For Web Developer
+## <span id="web">For Web Developer</span>
 
 ### Installing
 
@@ -35,9 +35,9 @@ Or you can directly use the script by adding this code to your html file.
 
 [More information](Web/README.md)
 
-## For iOS Developer
+## <span id="ios>For iOS Developer</span>
 
-### API Document
+### <span id="iosapi">API Document</span>
 
 [More information](iOS/README.md)
 
@@ -106,7 +106,7 @@ NSDictionary *conf = @{
 
 #### Call APIs to Read Data and Draw figure
 
-At [API Document]() section, we provide a lot of APIs, including: Reading data and Drawing figures.
+At [API Document](#iosapi) section, we provide a lot of APIs, including: Reading data and Drawing figures.
 
 - Call API to read segdup.csv data
 
