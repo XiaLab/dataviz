@@ -21,7 +21,7 @@ Through more in-depth interaction attributes, users are capable of instantly ope
 
 ## For Web Developer
 
-###Installing
+### Installing
 
 if you use npm, just use the command `npm install Plot.js` to install the library.
 
@@ -33,7 +33,7 @@ Or you can directly use the script by adding this code to your html file.
 
 ### API Document 
 
-[More information](Web/README.md.)
+[More information](Web/README.md)
 
 ## For iOS Developer
 
