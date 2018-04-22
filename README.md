@@ -9,8 +9,8 @@ todo add a pic
 ## Getting Started
 
 - Visit the [Demo website]() and find out what you can do with XXLibrary.
-- First time with XXLibrary? Read the [Overview]() section below and then check out the Usages & Examples. 
-- We provide tutorial for both [web developer]() and [iOS developer]().
+- First time with XXLibrary? Read the [Overview](#overview) section below and then check out the Usages & Examples. 
+- We provide tutorial for both [web developer](#for-web-developer) and [iOS developer](#for-ios-developer).
 - Still need some help? Submit an issue on [Github](https://github.com/XiaLab/dataviz/issues) or contact us with email: contact@sciencewall.net 
 
 ## Overview
@@ -106,7 +106,7 @@ NSDictionary *conf = @{
 
 #### Call APIs to Read Data and Draw figure
 
-At [API Document]() section, we provide a lot of APIs, including: Reading data and Drawing figures.
+At [API Document](#api-document-1) section, we provide a lot of APIs, including: Reading data and Drawing figures.
 
 - Call API to read segdup.csv data
 
@@ -125,7 +125,7 @@ At [API Document]() section, we provide a lot of APIs, including: Reading data a
 
 #### Run Xcode and check the result
 
-todo add a stack pic
+![stack](images/stack.png)
 
 ### Requirements
 
