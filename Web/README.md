@@ -2,13 +2,15 @@
 
 ### API Reference
 
-Plot.js has three types of modules to draw graph, including Base、Bokeh and Circos modules.
+Plot.js has three types of modules to draw graph, including Shape、Chart and Circos modules.
 
-#### [Base](API/Base.md)
+#### [Shape](API/Shape.md)
 
-This module is used to draw the primary objects, like circle、triangle、rectangle and so on.
+This module is used to draw the primary objects, like circle、ellipse and rectangle
 
-* ​
+* [drawCircle](API/Shape.md) create a circle
+* [drawRect](API/Shape.md) create a rectangle
+* [drawEllipse](API/Shape.md) create an ellipse
 
 #### [Chart](API/Chart.md)
 
