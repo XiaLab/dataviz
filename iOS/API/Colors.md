@@ -1,6 +1,6 @@
 ## Colors
 
-More detail in`DFIColor.h`header file。**DFIColor class offers many easy way to generate varies of colors , supporting many kinds of color formats。
+More detail in`DFIColor.h`header file。**DFIColor** class offers many easy way to generate varies of colors , supporting many kinds of color formats。
 
 ### API
 

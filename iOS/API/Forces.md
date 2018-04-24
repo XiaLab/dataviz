@@ -1,7 +1,7 @@
 ## Forces
 
 Offer API to create force graph.
-![force](./src/ios/force.png)
+
 ### ForceSimulation
 
 More detail in`DFIForceSimulation.h`header file。**DFIForceSimulation** class is used to simulate following scene in which multiple nodes move within complex kinds of forces. There are multiple nodes and different kinds of force in this scene including spring-force, gravitaion or centrepetal force and so on.
