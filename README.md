@@ -125,8 +125,6 @@ At [API Document](#api-document-1) section, we provide a lot of APIs, including:
 
 #### Run Xcode and check the result
 
-![stack](images/stack.png)
-
 ### Requirements
 
 XXLibarary requires iOS 9.0 and above.
