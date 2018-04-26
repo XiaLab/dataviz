@@ -193,7 +193,7 @@ At [API Document](#api-document-1) section, we provide a lot of APIs, including:
 
 #### Circular Shape
 
-[Circular Shape][iOS/README.md#circular-shape] provide APIs to draw circular shapes and the circular shape's layout.
+[Circular Shape](iOS/README.md#circular-shape) provide APIs to draw circular shapes and the circular shape's layout.
 
 [More information](iOS/README.md)
 
