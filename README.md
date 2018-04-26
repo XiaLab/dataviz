@@ -8,7 +8,7 @@ todo add a pic
 
 ## Getting Started
 
-- Visit the [Demo website]() and find out what you can do with XXLibrary.
+- Visit the [Demo website](http://dataviz.sciencewall.net/) and find out what you can do with XXLibrary.
 - First time with XXLibrary? Read the [Overview](#overview) section below and then check out the Usages & Examples. 
 - We provide tutorial for both [web developers](#for-web-developers) and [iOS developers](#for-ios-developers).
 - Still need some help? Submit an issue on [Github](https://github.com/XiaLab/dataviz/issues) or contact us with email: contact@sciencewall.net 
