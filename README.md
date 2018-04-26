@@ -68,14 +68,14 @@ target "YOUR PROJECT" do
 	pod 'Colours'
 	
 	pod 'React', :path => '../node_modules/react-native', :subspecs => [
-      'Core',
-      'CxxBridge', # Include this for RN >= 0.47
-      'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
-      'RCTText',
-      'RCTNetwork',
-      'RCTWebSocket', # Needed for debugging
-      'RCTAnimation', # Needed for FlatList and animations running on native UI thread
-      # Add any other subspecs you want to use in your project
+        'Core',
+        'CxxBridge', # Include this for RN >= 0.47
+        'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+        'RCTText',
+        'RCTNetwork',
+        'RCTWebSocket', # Needed for debugging
+        'RCTAnimation', # Needed for FlatList and animations running on native UI thread
+        # Add any other subspecs you want to use in your project
     ]
     pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
     pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
