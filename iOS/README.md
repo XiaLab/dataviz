@@ -1,5 +1,5 @@
 ## iOS API Document
-If you are an iOS developer, please check out this section [For iOS Developer]().
+If you are an iOS developer, please check out this section [For iOS Developers](../README.md#for-ios-developers).
 
 ### Download Resources
 [Static Library](/lib)
