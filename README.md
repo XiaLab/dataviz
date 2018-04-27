@@ -11,7 +11,7 @@ todo add a pic
 - Visit the [Demo website](http://dataviz.sciencewall.net/) and find out what you can do with XXLibrary.
 - First time with XXLibrary? Read the [Overview](#overview) section below and then check out the Usages & Examples. 
 - We provide tutorial for both [web developers](#for-web-developers) and [iOS developers](#for-ios-developers).
-- Still need some help? Submit an issue on [Github](https://github.com/XiaLab/dataviz/issues) or contact us with email: contact@sciencewall.net 
+- Still need some help? Submit an issue on [Github](https://github.com/XiaLab/dataviz/issues) or contact us with email: contact@sciencewall.net
 
 ## Overview
 
@@ -147,15 +147,15 @@ NSDictionary *configuration = @{
                 CGFloat astart = [d[@"start"] floatValue]; // astart: start position
                 CGFloat aend = [d[@"end"] floatValue]; // aend: end position
                 if (aend - astart > 150000) {
-                    return @"red";  // When the clip length is larger than 150000, the clip is displayed in red
+                    return @"#004c99";  // When the clip length is larger than 150000, the clip is displayed in #004c99
                 } else if (aend - astart > 120000) {
-                    return @"#333"; // larger than 120000, in #333
+                    return @"#0066cc"; // larger than 120000, in #0066cc
                 } else if (aend - astart > 90000) {
-                    return @"#666"; // larger than 90000, in #666
+                    return @"#0080ff"; // larger than 90000, in #0080ff
                 } else if (aend - astart > 60000) {
-                    return @"#999"; // larger than 60000, in #999
+                    return @"#3399ff"; // larger than 60000, in #3399ff
                 } else if (aend - astart > 30000) {
-                    return @"#BBB"; // larger than 30000, in #BBB
+                    return @"#66b2ff"; // larger than 30000, in #66b2ff
                 } else {
                     return nil;
                 }
@@ -184,6 +184,10 @@ At [API Document](#api-document-1) section, we provide a lot of APIs, including:
   ````
 
 #### Run Xcode and check the result
+
+![stack-ios](images/stack-ios.png)
+
+Each chromosome fragment in the correct position and different colors.
 
 ### API Document
 
