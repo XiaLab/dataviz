@@ -16,5 +16,6 @@ If you are an iOS developer, please check out this section [For iOS Developers](
 - [Paths](API/Paths.md)
 - [Shapes](API/Shapes.md)
 #### Circular Shape
+- [Configuration](API/Conf.md)
 - [Layout](API/Layout.md)
 - [Circular Shape](API/Circos.md)
