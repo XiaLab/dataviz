@@ -1,4 +1,4 @@
-## Web Readme
+## Web Reference
 
 ### API Reference
 
@@ -21,3 +21,15 @@ This module is dedicated to draw the common charts, such as heatmap and boxplot 
 * [occurrence](API/Chart.md) create the occurrence chart
 * [boxplot](API/Chart.md) create the boxplot
 
+
+#### [Circular](API/Circular.md)
+
+This module is used to draw circular biological data, it includes:
+
+* [chords](API/Circular.md) create the circular chords
+* [heatmap](API/Circular.md) create the circular heatmap
+* [highlight](API/Circular.md) create the circular highlight
+* [histogram](API/Circular.md) create the circular histogram
+* [line](API/Circular.md) create the circular line
+* [scatter](API/Circular.md) create the circular scatter
+* [stack](API/Circular.md) create the circular stack

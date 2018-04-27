@@ -4,6 +4,8 @@ draw several types of common charts.
 
 ### API
 
+#### iris
+
 [#]() `new Plot.chart(elem).iris(data, options)`
 
 specify the element to be the canvas, and draw the iris chart with the passing data and options.
@@ -45,7 +47,7 @@ parameters:
     - `strokeWidth`: the stroke width of the target
     - `fillOpacity`: the fill opacity of the target
 
-  ​
+#### candlestick
 
   [#]() `new Plot.chart(elem).candleStick(data, options)`
 
@@ -71,8 +73,6 @@ parameters:
       - `y`: an array of the range of the y coordinate
     - `zoom`: whether the chart can be zoomed, optional
     - `blockWidth`: the width of the block in the candlestick chart, optional
-
-
     - `canvasSize`: the size of the canvas, optional
       - `w`: the width of the canvas
       - `h`: the height of the canvas
@@ -88,7 +88,8 @@ parameters:
       - `strokeWidth`: the stroke width of the target
       - `fillOpacity`: the fill opacity of the target
 
-  ​
+
+#### occurrence
 
   [#]()`new Plot.chart(elem).occurrence(data, options)`
 
@@ -117,8 +118,6 @@ parameters:
       * `w`: the width of the unit block
       * `h`: the height of the unit block
     - `gap`: the gap between the unit blocks, optional
-
-
     - `canvasSize`: the size of the canvas, optional
       - `w`: the width of the canvas
       - `h`: the height of the canvas
@@ -134,7 +133,8 @@ parameters:
       - `strokeWidth`: the stroke width of the target
       - `fillOpacity`: the fill opacity of the target
 
-  ​
+
+#### boxplot
 
   [#]()`new Plot.chart(elem).boxplot(data, options)`
 
@@ -164,8 +164,6 @@ parameters:
       - `w`: the width of the unit block
       - `h`: the height of the unit block
     - `gap`: the gap between the unit blocks, optional
-
-
     - `canvasSize`: the size of the canvas, optional
       - `w`: the width of the canvas
       - `h`: the height of the canvas
@@ -180,5 +178,6 @@ parameters:
       - `stroke`: the stroke color of the target
       - `strokeWidth`: the stroke width of the target
       - `fillOpacity`: the fill opacity of the target
+
 
   ​

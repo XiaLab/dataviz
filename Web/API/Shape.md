@@ -4,6 +4,8 @@ draw the primary shapes
 
 ### API
 
+#### initialize
+
 [#]() `new Plot.shape(elem)`
 
 initialize the shape renderer
@@ -12,7 +14,9 @@ parameters:
 
 * `elem`: the element to mount the canvas
 
-the constructor retures a shapeRenderer
+the constructor returns a shapeRenderer
+
+#### beginDraw
 
 [#]() `shapeRenderer.beginDraw()`
 
@@ -31,6 +35,8 @@ parameters:
 * `strokeColor`: the color of the border of the circle, default is 0, which means black
 * `fillColor`: the color of the circle, default is 0, which means black
 
+#### drawRect
+
 [#]() `shapeRenderer.drawRect(x, y, width, height, lineWidth, strokeColor, fillColor)`
 
 draw a rectangle on the canvas
@@ -45,6 +51,8 @@ parameters:
 - `strokeColor`: the color of the border of the rectangle, default is 0, which means black
 - `fillColor`: the color of the rectangle, default is 0, which means black
 
+#### drawEllipse
+
 [#]() `shapeRenderer.drawEllipse(x, y, width, height, lineWidth, strokeColor, fillColor)`
 
 draw an ellipse on the canvas
@@ -58,6 +66,8 @@ parameters:
 - `lineWidth`: the width of the border of the ellipse, default is 0
 - `strokeColor`: the color of the border of the ellipse, default is 0, which means black
 - `fillColor`: the color of the ellipse, default is 0, which means black
+
+#### render
 
 [#]() `shapeRenderer.render()`
 
