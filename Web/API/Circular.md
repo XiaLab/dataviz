@@ -10,15 +10,17 @@ The configuration of the different types are similar, here we conclude the confi
 
 #### layout configuration
 
-* * `fileUrl`: the url of the layout file
-  * `fileType`: the file type, including json, csv and tsv
-  * `configs`: the configuration of the layout
-    * `innerRadius`: the inner radius of the layout
-    * `outerRadius`: the outer radius of the layout
-    * `labels`: whether to show the labels of the layout
-    * `ticks`: whether to show the ticks of the layout
-    * `tickScale`: the tick scale of the layout ticks
-    * `tips`: the callback function to show the hover information
+* `fileUrl`: the url of the layout file
+
+
+* `fileType`: the file type, including json, csv and tsv
+* `configs`: the configuration of the layout
+  * `innerRadius`: the inner radius of the layout
+  * `outerRadius`: the outer radius of the layout
+  * `labels`: whether to show the labels of the layout
+  * `ticks`: whether to show the ticks of the layout
+  * `tickScale`: the tick scale of the layout ticks
+  * `tips`: the callback function to show the hover information
 
 #### circular configuration
 
