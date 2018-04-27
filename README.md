@@ -21,15 +21,138 @@ Through more in-depth interaction attributes, users are capable of instantly ope
 
 ## For Web Developers
 
-### Installing
+### Requirements
 
-if you use npm, just use the command `npm install Plot.js` to install the library.
+XXLibrary depends on some third-party libraries, including:
 
-Or you can directly use the script by adding this code to your html file. 
+1. [d3.js](https://d3js.org/) - we use this lib to fetch files, format data and calculate the coordinates of the graph.
+2. [pixi.js](http://www.pixijs.com/) - use to render the canvas
+3. [lodash](https://lodash.com/) - convenient for manipulating data
+
+### Installation
+
+you can directly use the script by embed this code to your html file. 
 
 ```html
 <script src="http://www.sciencewall.net/plot.js"></script>
 ```
+
+if you use npm, just use the command `npm install Plot.js` to install the library.
+
+### Usage & Example
+
+There are some steps to draw the graph you want.
+
+#### Prepare Bioinformatics Data
+
+Prepare the data that needs to be displayed and decide which graph type the data will eventually be displayed. Our library can accept input files in a variety of formats, JSON, csv, tsv, dsv, and so on.
+
+Here we try to draw the circular heatmap to explain the whole steps.
+
+Firstly, we need to prepare the layout data, which builds the base structure of the graph.
+
+```json
+[{
+		"id": "chr1",
+		"label": "chr1",
+		"color": "#996600",
+		"len": 307041717
+	},
+	{
+		"id": "chr2",
+		"label": "chr2",
+		"color": "#666600",
+		"len": 244442276
+	},
+	{
+		"id": "chr3",
+		"label": "chr3",
+		"color": "#99991E",
+		"len": 235667834
+	}
+]
+```
+
+The array above record the whole chromosome information, it has three chromosomes and each of them has individual information.
+
+Then, we prepare the heatmap data, which like this: 
+
+```text
+chrom	start		end			value
+chr1	0			1000000		0.5201
+chr1	1000000		2000000		0.5611
+chr1	2000000		3000000		0.4287
+chr1	3000000		4000000		0.2948
+chr1	4000000		5000000		0.3224
+chr1	5000000		6000000		0.3174
+chr1	6000000		7000000		0.3890
+chr1	7000000		8000000		0.3749
+chr1	8000000		9000000		0.3697
+chr1	9000000		10000000	0.3966
+chr1	10000000	11000000	0.4011
+chr1	11000000	12000000	0.4692
+chr1	12000000	13000000	0.3136
+chr1	13000000	14000000	0.4483
+chr1	14000000	15000000	0.4235
+chr1	15000000	16000000	0.4016
+chr1	16000000	17000000	0.4078
+chr1	17000000	18000000	0.3969
+chr1	18000000	19000000	0.5061
+chr1	19000000	20000000	0.3889
+chr1	20000000	21000000	0.5129
+chr1	21000000	22000000	0.4522
+chr1	22000000	23000000	0.4045
+chr1	23000000	24000000	0.4243
+chr1	24000000	25000000	0.4610
+chr1	25000000	26000000	0.3945
+chr1	26000000	27000000	0.4484
+```
+
+Each row of the file represents a chromosome fragment, and each row records the start and end of the chromosomal fragment. We use this data to draw the circular heatmap.
+
+You can directly download the file [10GRCh37.json](), [CHG.v3.bed]() and [CHH.v3.bed]() to try the process.
+
+#### Call APIs to Read Data and Draw figure
+
+We has already packed up the process of drawing graph and provide the api to simplify the flow.
+
+```javascript
+new Plot.circular(elem).chords({
+	fileUrl: '/dist/heatmap/10GRCh37.json',
+	fileType: 'json',
+	configs: {
+		innerRadius: 300,
+		outerRadius: 320,
+		labels: true,
+		ticks: true,
+		tips: function (d) {
+			return d.label
+		}
+	}
+}, [{
+	circularType: 'heatmap',
+	name: 'CHG',
+	fileUrl: '/dist/heatmap/CHG.v3.bed',
+	fileType: 'tsv',
+	configs: {
+		innerRadius: 0.8,
+		outerRadius: 0.95
+	}
+}, {
+	circularType: 'heatmap',
+	name: 'CHH',
+	fileUrl: '/dist/heatmap/CHH.v3.bed',
+	fileType: 'tsv',
+	configs: {
+		innerRadius: 0.5,
+		outerRadius: 0.75
+	}
+}]);
+```
+
+just call the api and pass the data and configurations or you can custom the color, radius and so on to draw what you want.
+
+And we can visit [heatmap]() to check the demo.
 
 ### API Document 
 
@@ -39,7 +162,7 @@ Or you can directly use the script by adding this code to your html file.
 
 ### Requirements
 
-XXLibarary requires iOS 9.0 and above.
+XXLibrary requires iOS 9.0 and above.
 
 Several third-party open source libraries are used within XXLibrary, including:
 
