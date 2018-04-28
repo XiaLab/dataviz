@@ -106,10 +106,7 @@ new Plot.circular(document.getElementById('canvas')).chords({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: false,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'heatmap',
@@ -173,10 +170,7 @@ new Plot.circular(document.getElementById('canvas')).chords({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: true,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'heatmap',
@@ -213,10 +207,7 @@ new Plot.circular(document.getElementById('canvas')).highlight({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: false,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'highlight',
@@ -244,10 +235,7 @@ new Plot.circular(document.getElementById('canvas')).histogram({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: false,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'highlight',
@@ -285,10 +273,7 @@ new Plot.circular(document.getElementById('canvas')).line({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: false,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'highlight',
@@ -363,10 +348,7 @@ new Plot.circular(document.getElementById('canvas')).scatter({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: false,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'highlight',
@@ -579,10 +561,7 @@ new Plot.circular(document.getElementById('canvas')).stack({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: true,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'highlight',

@@ -124,10 +124,7 @@ new Plot.circular(elem).chords({
 		innerRadius: 300,
 		outerRadius: 320,
 		labels: true,
-		ticks: true,
-		tips: function (d) {
-			return d.label
-		}
+		ticks: true
 	}
 }, [{
 	circularType: 'heatmap',
