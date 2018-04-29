@@ -79,7 +79,7 @@ Then, we prepare the heatmap data, which like this:
 
 ```text
 chrom	start		end			value
-chr1	0			1000000		0.5201
+chr1	0		1000000		0.5201
 chr1	1000000		2000000		0.5611
 chr1	2000000		3000000		0.4287
 chr1	3000000		4000000		0.2948
