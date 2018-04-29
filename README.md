@@ -52,7 +52,8 @@ Here we try to draw the circular heatmap to explain the whole steps.
 Firstly, we need to prepare the layout data, which builds the base structure of the graph.
 
 ```json
-[{
+[
+    {
 		"id": "chr1",
 		"label": "chr1",
 		"color": "#996600",
@@ -78,7 +79,7 @@ The array above record the whole chromosome information, it has three chromosome
 Then, we prepare the heatmap data, which like this: 
 
 ```text
-chrom	start		end			value
+chrom	start		end		value
 chr1	0		1000000		0.5201
 chr1	1000000		2000000		0.5611
 chr1	2000000		3000000		0.4287
