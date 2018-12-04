@@ -1,29 +1,25 @@
 ## Documentation
 
-## XXLibrary
+## VisShare
 
-XXLibrary is a high-performance cross-platform engine for comparative visualization and interactive exploration of diverse bioinformatics data.
-
-todo add a pic
+VisShare is a high-performance and cross-platform library for visualizing and publishing large-scale biomedical research data.
 
 ## Getting Started
 
-- Visit the [Demo website](http://dataviz.sciencewall.net) and find out what you can do with XXLibrary.
-- First time with XXLibrary? Read the [Overview](#overview) section below and then check out the Usages & Examples. 
+- Visit the [Demo website](http://dataviz.sciencewall.net) and find out what you can do with VisShare.
+- First time with VisShare? Read the [Overview](#overview) section below and then check out the Usages & Examples. 
 - We provide tutorial for both [web developers](#for-web-developers) and [iOS developers](#for-ios-developers).
 - Still need some help? Submit an issue on [Github](https://github.com/XiaLab/dataviz/issues) or contact us with email: contact@sciencewall.net
 
 ## Overview
 
-XXLibrary is a high-performance cross-platform engine for comparative visualization and interactive exploration of diverse bioinformatics data. Applications integrated with XXLibrary can interactively customize the presentation of user requirements on both web pages and mobile apps. 
-
-Through more in-depth interaction attributes, users are capable of instantly operating on the ﬁgures and dynamically organizing the presentation to obtain highlight, comparison and other desired exhibitions. The high-performance visualization engine can be integrated in data analysis tools as a .lib document to facilitate bioinformatics research, and it is also designed to be accessible to a wide range of users, including bench biologists and bioinformaticians.
+We developed VisShare, a high-performance and cross-platform visualization library, to address the two challenges. VisShare incorporates two key components: a high-performance engine (HPE), and a full-featured API. The framework of VisShare depicts the workflow of creating and sharing visualizations between users and communities. Based on VisShare, visualizations of large and heterogeneous biomedical data representation can be easily disseminated to inclusive publishing platforms through integrating VisShare into web and native apps, furthermore accompanied by interactive user experience.
 
 ## For Web Developers
 
 ### Requirements
 
-XXLibrary depends on some third-party libraries, including:
+VisShare depends on some third-party libraries, including:
 
 1. [d3.js](https://d3js.org/) - we use this lib to fetch files, format data and calculate the coordinates of the graph.
 2. [pixi.js](http://www.pixijs.com/) - use to render the canvas
@@ -34,10 +30,10 @@ XXLibrary depends on some third-party libraries, including:
 you can directly use the script by embed this code to your html file. 
 
 ```html
-<script src="http://www.sciencewall.net/plot.js"></script>
+<script src="http://www.sciencewall.net/VisShare.js"></script>
 ```
 
-if you use npm, just use the command `npm install Plot.js` to install the library.
+if you use npm, just use the command `npm install VisShare.js` to install the library.
 
 ### Usage & Example
 
@@ -175,9 +171,9 @@ And we can visit [heatmap]() to check the demo.
 
 ### Requirements
 
-XXLibrary requires iOS 9.0 and above.
+VisShare requires iOS 9.0 and above.
 
-Several third-party open source libraries are used within XXLibrary, including:
+Several third-party open source libraries are used within VisShare, including:
 
 1. [Colours](https://github.com/bennyguitar/Colours) - Color Supporting
 2. [Mantle](https://github.com/Mantle/Mantle) - JSON Supporting
@@ -238,7 +234,7 @@ Now add Cocoa framework to your project. Open your project and navigate to `Buil
 
 ### Usage & Example
 
-XXLibrary is easy to use for iOS developers. There are 4 major steps.
+VisShare is easy to use for iOS developers. There are 4 major steps.
 
 #### Prepare Bioinformatics Data
 
@@ -343,6 +339,6 @@ Please check out this page for [Performance Comparison](Performance.md).
 
 ## Credits
 
-XXLibrary is brought to you by XiaLab.
+VisShare is brought to you by XiaLab.
 
 If you have any questions, please contact contact@sciencewall.net
