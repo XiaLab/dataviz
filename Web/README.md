@@ -2,7 +2,7 @@
 
 ### API Reference
 
-Plot.js has three types of modules to draw graph, including Shape、Chart and Circos modules.
+VisShare.js has three types of modules to draw graph, including Shape、Chart and Circos modules.
 
 #### [Shape](API/Shape.md)
 
